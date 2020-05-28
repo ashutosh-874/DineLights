@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <TextView
+        android:id="@+id/txtPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/toolBar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#212"/>
+
+    <Button
+        android:id="@+id/btnToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Proceed To Cart"
+        android:fontFamily="@font/roboto"
+        android:background="@color/color_button"
+        android:textColor="#fff"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerItemList"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtPurpose"
+        android:layout_above="@+id/btnToCart"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:outlineAmbientShadowColor="@color/design_default_color_primary" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

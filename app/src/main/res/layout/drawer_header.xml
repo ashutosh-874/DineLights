@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:id="@+id/lldrawerHeader">
+
+    <ImageView
+        android:id="@+id/imgDrawerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profile_icon"
+        android:layout_marginLeft="15dip"/>
+
+    <TextView
+        android:id="@+id/txtDrawerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="12dip"
+        android:layout_marginStart="15dip"
+        android:clickable="true"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/txtDrawerMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="18dip"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+</LinearLayout>

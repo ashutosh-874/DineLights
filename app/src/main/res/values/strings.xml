@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">DineLights</string>
+    <string name="homePage">Home Page</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="faq">FAQ</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_page">Home Page</string>
+    <string name="name_of_the_restaurant">Name of the Restaurant</string>
+    <string name="rs_299">Rs. 299</string>
+    <string name="_4_5">4.5</string>
+    <string name="enter_mobile">Mobile Number</string>
+    <string name="enter_password">Password</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="empty_cart">Your cart is currently empty</string>
+    <string name="no_orders">You haven\'t placed any orders yet</string>
+    <string name="order_history_static_text">Your previous orders are listed below :</string>
+    <string name="restaurant_name">Restaurant</string>
+    <string name="dummy_date">20/12/2018</string>
+    <string name="forgot_password">  Forgot Password?  </string>
+    <string name="rgister">  New Here !!, Register  </string>
+    <string name="what_restaurents">Are restaurents good enough?</string>
+    <string name="rev_restaurent">Oh yes!we are allways trying to make best food for you. Enjoy your food without worry.</string>
+    <string name="log_out">Log Out</string>
+    <string name="title">Choose from the menu listed Below:</string>
+    <string name="instruction">Choose from the menu items Listed below:</string>
+
+
+    <string name="shared_preferences">Login Preferences</string>
+    <string name="shared_prefs">Botton Prefs</string>
+    <string name="shared_preferences2">Mobile Preferences</string>
+    <string name="shared_preferences3">UserId Preferences</string>
+    <string name="shared_preferences4">Password Preferences</string>
+    <string name="name_min_3_characters">Name(Min. 3 Characters)</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile_number_10_digits"> Mobile Number(10 digits)</string>
+    <string name="deleivery_address">Delivery Address</string>
+    <string name="password_min_6_characters">Password(Min. 6 characters)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">  Already Registered? Login Here  </string>
+    <string name="get_otp">Get otp</string>
+    <string name="login_here">"  Login Here  "</string>
+    <string name="success_message">Your Order Has Been Successfully Placed</string>
+    <string name="ans_q2">You can use any ONE of the following Payment Modes:- 1. Cash on Delivery. 2. Online Payment - using Credit Card / Debit Card / Net Banking. 3. DineLights Prepaid Account. 4. Card on Delivery.</string>
+    <string name="q1">What modes of payment are acceptable here ?</string>
+    <string name="q2">Can i order from 2 restaurants at the same time ?</string>
+    <string name="ansq2">No, currently we are unable to process multiple restaurants in a single order,However you can choose any number of items from a single rstaurant.</string>
+    <string name="q3">How many number of each item can i order at a time?</string>
+    <string name="ans_q3">You can only order one number of each variant at a time</string>
+    <string name="q4">Do you also deliver spoons and plates with order?</string>
+    <string name="ans_q4">Ofcourse we do, but if you like you can cancel the delivery of spoons and plates at the time of checkout.</string>
+    <string name="no_favourites_found">No favourites found</string>
+    <string name="ordering_from">Ordering From:</string>
+    <string name="place_order">Place Order</string>
+    <array name="filters">
+        <item>Cost(Low to High)</item>
+        <item>Cost(High to Low)</item>
+        <item>Rating</item>
+    </array>
+</resources>

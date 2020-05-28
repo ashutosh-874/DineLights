@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="55dp"
+        android:src="@drawable/text_logo_deeporange" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        app:cardCornerRadius="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="5dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_mobile"
+            android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/ic_mobile"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:textColorHint="#fff"
+        android:textColor="#ffff"
+        android:maxLength="10"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/ic_lock"
+        android:inputType="numberPassword"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:maxLines="1"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/action_sign_in_short"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#d84315"/>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_below="@id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+        android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_border"
+            android:layout_marginStart="48dp"
+            android:textColor="#212"
+        android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#212"
+        android:text="@string/rgister"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_border"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

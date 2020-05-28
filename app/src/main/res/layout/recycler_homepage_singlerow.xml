@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/llcontent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="6">
+
+
+        <ImageView
+            android:layout_weight="1.5"
+            android:id="@+id/imgResImage"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:src="@drawable/dine_lights"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+
+        <RelativeLayout
+            android:layout_weight="3.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtResName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_the_restaurant"
+                android:fontFamily="@font/roboto"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgResImage"
+                android:text=" Rs."
+                android:fontFamily="@font/roboto"
+                android:layout_below="@+id/txtResName"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#357a38"
+                tools:ignore="NotSibling" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnheart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            android:background="#fff"
+            android:layout_marginTop="12dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txtResRating"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:drawableStart="@drawable/ic_ratings"
+            android:textColor="#ffca28"
+            android:text="@string/_4_5"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

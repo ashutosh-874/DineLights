@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.RegistrationActivity"
+    android:background="@color/background2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="25dp">
+
+    <LinearLayout
+        android:id="@+id/llcard1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0097a7">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:hint="@string/name_min_3_characters"
+            android:fontFamily="@font/roboto"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="@string/email_address"
+            android:fontFamily="@font/roboto"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_mobile"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="@string/mobile_number_10_digits"
+            android:fontFamily="@font/roboto"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="@string/deleivery_address"
+            android:fontFamily="@font/roboto"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="@string/password_min_6_characters"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:textColor="#ffff"
+            android:inputType="numberPassword"
+            android:textColorHint="#ffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etconfirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="@string/confirm_password"
+            android:fontFamily="@font/roboto"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_button"
+            android:text="@string/register"
+            android:fontFamily="@font/roboto"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/already_registered_login_here"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/text_border"
+            android:textColor="#212"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="5dp"/>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
